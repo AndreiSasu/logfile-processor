@@ -15,7 +15,7 @@ Split file into chunks, either by line, or by size:
 ``split -b 500MB large_file.log``
 
 ### How to run the application: 
-1. From the IDE, make sure "annotation processing is enabled", because Lombok is being used.
+1. From the IDE, make sure "annotation processing is enabled", because [Lombok](https://projectlombok.org/) is being used.
 [https://www.jetbrains.com/help/idea/configuring-annotation-processing.html](https://www.jetbrains.com/help/idea/configuring-annotation-processing.html)
 
 2. Run DemoApplication.java with a folder name parameter containing log files. 
