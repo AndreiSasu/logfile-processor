@@ -25,12 +25,14 @@ Split file into chunks, either by line, or by size:
 This is only a demo application. 
 For real world production use a streaming solution is preferred to a batch processing once since it's more suitable for logs.
 
+Possible options:
+
 1. AWS Kinesis + ElasticSearch:
    Ex: https://aws.amazon.com/getting-started/projects/build-log-analytics-solution/
 
 2. Stream logs to Kafka and process with Apache Spark
 
-3. Any other form of distributed cache(like Redis) + Hadoop MapReduce
+3. Load logs to any other form of distributed cache(like Redis) and process batches with Hadoop MapReduce
 
 3. Spring Batch in parallel mode with file chunking.
 
