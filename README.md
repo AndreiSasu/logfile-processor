@@ -32,7 +32,7 @@ Possible options:
 
 2. Stream logs to Kafka and process with Apache Spark
 
-3. Load logs to any other form of distributed cache(like Redis) and process batches with Hadoop MapReduce
+3. Load logs to any other distributed cache(like Redis) and process batches with Hadoop MapReduce
 
 3. Spring Batch in parallel mode with file chunking.
 
