@@ -18,3 +18,14 @@ Split file into chunks, either by line, or by size:
 [https://www.jetbrains.com/help/idea/configuring-annotation-processing.html](https://www.jetbrains.com/help/idea/configuring-annotation-processing.html)
 
 2. Run DemoApplication.java with a folder name parameter with log a folder containing log files as parameter. 
+
+### Production support
+This is only a demo application. 
+For real world production use a streaming solution is preferred to a batch processing once since it's more suitable for logs.
+
+1. AWS Kinesis + ElasticSearch:
+   Ex: https://aws.amazon.com/getting-started/projects/build-log-analytics-solution/
+
+2. Apache Spark or Hadoop MapReduce
+
+3. Spring Batch in parallel mode with file chunking.
