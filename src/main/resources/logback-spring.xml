@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+
+<configuration scan="true">
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="com.example.demo.parser" level="INFO" />
+    <logger name="com.example.demo.repository" level="INFO" />
+    <logger name="com.example.demo.service" level="INFO" />
+    <logger name="com.example.demo.task" level="INFO" />
+
+</configuration>
