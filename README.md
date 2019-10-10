@@ -1,4 +1,4 @@
-Log Processing Demo application
+Batch Log Processing Demo application
 
 ### The general approach: 
 
