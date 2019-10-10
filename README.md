@@ -28,6 +28,7 @@ For real world production use a streaming solution is preferred to a batch proce
 Possible options:
 
 1. AWS Kinesis + ElasticSearch:
+
    Ex: https://aws.amazon.com/getting-started/projects/build-log-analytics-solution/
 
 2. Stream logs to Kafka and process with Apache Spark
