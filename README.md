@@ -9,6 +9,7 @@ Log Processing Demo application
 ### Large file support
 Split file into chunks, either by line, or by size: 
 ``split -l 200 large_file.log``
+
 ``split -b 500MB large_file.log``
 
 ### How to run the application: 
