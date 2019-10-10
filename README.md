@@ -29,3 +29,7 @@ For real world production use a streaming solution is preferred to a batch proce
 2. Apache Spark or Hadoop MapReduce
 
 3. Spring Batch in parallel mode with file chunking.
+
+
+### Todo
+The application can be extended to become a lightweight log streaming agent
