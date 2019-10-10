@@ -17,7 +17,9 @@ Split file into chunks, either by line, or by size:
 1. From the IDE, make sure "annotation processing is enabled", because Lombok is being used.
 [https://www.jetbrains.com/help/idea/configuring-annotation-processing.html](https://www.jetbrains.com/help/idea/configuring-annotation-processing.html)
 
-2. Run DemoApplication.java with a folder name parameter with log a folder containing log files as parameter. 
+2. Run DemoApplication.java with a folder name parameter containing log files. 
+   Ex:
+   ``/home/andrei/Projects/logfile-processor``
 
 ### Production support
 This is only a demo application. 
@@ -26,7 +28,9 @@ For real world production use a streaming solution is preferred to a batch proce
 1. AWS Kinesis + ElasticSearch:
    Ex: https://aws.amazon.com/getting-started/projects/build-log-analytics-solution/
 
-2. Apache Spark or Hadoop MapReduce
+2. Stream logs to Kafka and process with Apache Spark
+
+3. Any other form of distributed cache(like Redis) + Hadoop MapReduce
 
 3. Spring Batch in parallel mode with file chunking.
 
