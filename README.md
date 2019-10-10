@@ -6,6 +6,11 @@ Log Processing Demo application
 2. parse and load the content of each file in a separate table, using a thread pool
 3. process all loaded events and load them in a second table, using a thread pool
 
+### Large file support
+Split file into chunks, either by line, or by size: 
+``split -l 200 large_file.log``
+``split -b 500MB large_file.log``
+
 ### How to run the application: 
 1. From the IDE, make sure "annotation processing is enabled", because Lombok is being used.
 [https://www.jetbrains.com/help/idea/configuring-annotation-processing.html](https://www.jetbrains.com/help/idea/configuring-annotation-processing.html)
