@@ -73,6 +73,6 @@ public class ProcessEventsTaskTest {
                 .hasSize(2)
                 .allMatch(processedEvent -> processedEvent.getEventDuration() != null, "Duration not found!")
                 .allMatch(processedEvent -> "test".equals(processedEvent.getHost()), "Host Not Found!")
-                .allMatch(processedEvent -> null != processedEvent.getEventId(), "Event ID not found!");
+                .allMatch(processedEvent -> processedEvent.getEventId() != null, "Event ID not found!");
     }
 }
