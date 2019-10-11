@@ -14,11 +14,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.util.CollectionUtils;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @ContextConfiguration(classes = {TestConfig.class})
@@ -74,5 +72,8 @@ public class ProcessEventsTaskTest {
                 .allMatch(processedEvent -> processedEvent.getEventDuration() != null, "Duration not found!")
                 .allMatch(processedEvent -> "test".equals(processedEvent.getHost()), "Host Not Found!")
                 .allMatch(processedEvent -> processedEvent.getEventId() != null, "Event ID not found!");
+
+        Set<String> eventIDs = processedEvents.parallelStream().map(processedEvent -> processedEvent.getEventId()).collect(Collectors.toSet());
+        Assertions.assertThat(eventIDs).containsExactly("testid2", "testid");
     }
 }
